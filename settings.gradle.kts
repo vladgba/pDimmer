@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Darker"
+rootProject.name = "pDimmer"
 include(":app")
  
