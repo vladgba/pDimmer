@@ -63,7 +63,7 @@ class OverlayService : Service(), SharedPreferences.OnSharedPreferenceChangeList
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         // Must be called promptly for every start, even one that only stops the service.
         goForeground()
-        val a11y = DarkerAccessibilityService.isActive
+        val a11y = DimmerAccessibilityService.isActive
         val want = when (intent?.action) {
             ACTION_STOP -> false
             ACTION_TOGGLE -> if (a11y) !Prefs.isEnabled(this) else !window.isShown

@@ -36,7 +36,7 @@ class DimTileService : TileService(), SharedPreferences.OnSharedPreferenceChange
     override fun onClick() {
         super.onClick()
         when {
-            DarkerAccessibilityService.isActive -> Prefs.setEnabled(this, !Prefs.isEnabled(this))
+            DimmerAccessibilityService.isActive -> Prefs.setEnabled(this, !Prefs.isEnabled(this))
             Settings.canDrawOverlays(this) -> {
                 val action = if (Prefs.isEnabled(this)) OverlayService.ACTION_STOP else OverlayService.ACTION_START
                 startForegroundService(

@@ -1,7 +1,7 @@
 <resources>
-    <style name="Theme.Darker" parent="Theme.P" />
+    <style name="Theme.PDimmer" parent="Theme.P" />
 
-    <style name="DarkerSlider">
+    <style name="DimmerSlider">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">48dp</item>
         <item name="android:minHeight">6dp</item>
@@ -14,14 +14,14 @@
     </style>
 
     <!-- Container for a setup button: a rounded pill with a centered icon + label inside. -->
-    <style name="DarkerButton">
+    <style name="DimmerButton">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">52dp</item>
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
     </style>
 
-    <style name="DarkerButtonLabel">
+    <style name="DimmerButtonLabel">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center</item>

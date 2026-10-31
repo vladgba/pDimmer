@@ -16,7 +16,7 @@ import android.widget.RemoteViews
  *  - DimWidget          4x1  dim level  (− bar +)
  *  - BrightnessWidget   4x1  system brightness (− bar +)
  *  - ToggleWidget       1x1  dim on/off button
- *  - DarkerWidget       4x2  all of the above in one
+ *  - DimmerWidget       4x2  all of the above in one
  */
 
 open class BaseWidget : AppWidgetProvider() {
@@ -73,7 +73,7 @@ object Widgets {
         push(DimWidget::class.java, R.layout.widget_dim) { c, rv -> bindDim(c, rv) }
         push(BrightnessWidget::class.java, R.layout.widget_brightness) { c, rv -> bindBrightness(c, rv) }
         push(ToggleWidget::class.java, R.layout.widget_toggle) { c, rv -> bindPower(c, rv) }
-        push(DarkerWidget::class.java, R.layout.widget_darker) { c, rv ->
+        push(DimmerWidget::class.java, R.layout.widget_dimmer) { c, rv ->
             bindPower(c, rv); bindDim(c, rv); bindBrightness(c, rv)
         }
     }
@@ -85,7 +85,7 @@ object Widgets {
         rv.setInt(R.id.w_power, "setColorFilter", if (on) COLOR_INK else COLOR_TEXT)
         val pi = when {
             // The accessibility service follows the stored state directly.
-            DarkerAccessibilityService.isActive -> action(ctx, ACTION_POWER, 10)
+            DimmerAccessibilityService.isActive -> action(ctx, ACTION_POWER, 10)
             Settings.canDrawOverlays(ctx) -> PendingIntent.getForegroundService(
                 ctx, 11,
                 Intent(ctx, OverlayService::class.java).setAction(OverlayService.ACTION_TOGGLE),

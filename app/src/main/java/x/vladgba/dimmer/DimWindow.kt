@@ -13,7 +13,7 @@ import kotlin.math.max
 /**
  * The black, non-touchable window that does the dimming.
  * Hosted either by [OverlayService] (TYPE_APPLICATION_OVERLAY) or by
- * [DarkerAccessibilityService] (TYPE_ACCESSIBILITY_OVERLAY, which also covers system bars).
+ * [DimmerAccessibilityService] (TYPE_ACCESSIBILITY_OVERLAY, which also covers system bars).
  */
 class DimWindow(ctx: Context, private val type: Int) {
 

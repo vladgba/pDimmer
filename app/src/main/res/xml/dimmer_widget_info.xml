@@ -9,6 +9,6 @@
                     android:resizeMode="horizontal|vertical"
                     android:widgetCategory="home_screen"
                     android:updatePeriodMillis="1800000"
-                    android:initialLayout="@layout/widget_darker"
-                    android:previewLayout="@layout/widget_darker"
+                    android:initialLayout="@layout/widget_dimmer"
+                    android:previewLayout="@layout/widget_dimmer"
                     android:description="@string/widget_description"/>

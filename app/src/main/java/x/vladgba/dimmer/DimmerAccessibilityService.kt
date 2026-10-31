@@ -11,12 +11,12 @@ import android.view.accessibility.AccessibilityEvent
  * notification shade, and Android treats it as trusted, so it isn't capped at 80% opacity.
  * It reads no screen content and ignores all accessibility events.
  */
-class DarkerAccessibilityService : AccessibilityService(),
+class DimmerAccessibilityService : AccessibilityService(),
     SharedPreferences.OnSharedPreferenceChangeListener {
 
     companion object {
         @Volatile
-        private var instance: DarkerAccessibilityService? = null
+        private var instance: DimmerAccessibilityService? = null
         val isActive: Boolean get() = instance != null
     }
 

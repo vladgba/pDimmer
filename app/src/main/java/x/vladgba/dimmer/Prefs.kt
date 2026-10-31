@@ -17,10 +17,10 @@ object Prefs {
      * so that overlay is capped there. The accessibility overlay is trusted and goes to 95%.
      */
     val maxOpacity: Int get() =
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S || DarkerAccessibilityService.isActive) 95 else 80
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S || DimmerAccessibilityService.isActive) 95 else 80
 
     fun sp(ctx: Context): SharedPreferences =
-        ctx.applicationContext.getSharedPreferences("darker", Context.MODE_PRIVATE)
+        ctx.applicationContext.getSharedPreferences("dimmer", Context.MODE_PRIVATE)
 
     fun isEnabled(ctx: Context) = sp(ctx).getBoolean(KEY_ENABLED, false)
     fun setEnabled(ctx: Context, on: Boolean) = sp(ctx).edit().putBoolean(KEY_ENABLED, on).apply()
