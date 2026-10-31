@@ -60,7 +60,7 @@ pDimmer collects no personal data from anyone, including children.
 
 ## Changes to this policy
 
-If the app's handling of data changes, this policy will be updated before or together with that version, with a new effective date. The current version is always in the [project repository](https://github.com/vladgba/Darker).
+If the app's handling of data changes, this policy will be updated before or together with that version, with a new effective date. The current version is always in the [project repository](https://github.com/vladgba/pDimmer).
 
 ## Contact
 
