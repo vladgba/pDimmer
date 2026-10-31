@@ -34,4 +34,7 @@
     <string name="dim_more">More dim</string>
     <string name="bright_less">Lower brightness</string>
     <string name="bright_more">Raise brightness</string>
+    <string name="about">About</string>
+    <!-- Header logo: small "p" + capitals, like the feature graphic. -->
+    <string name="logo_title" translatable="false">pDIMMER</string>
 </resources>

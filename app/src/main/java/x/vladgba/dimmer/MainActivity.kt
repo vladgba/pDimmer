@@ -1,5 +1,8 @@
 package x.vladgba.dimmer
 
+import x.vladgba.dimmer.pui.PAboutInfo
+import x.vladgba.dimmer.pui.showPAbout
+
 import android.Manifest
 import android.app.Activity
 import android.app.AlertDialog
@@ -50,6 +53,9 @@ class MainActivity : Activity(), SharedPreferences.OnSharedPreferenceChangeListe
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        findViewById<android.view.View>(R.id.btn_about).setOnClickListener {
+            showPAbout(PAboutInfo(repo = "pDimmer", privacy = true, privacyFile = "privacy.md"))
+        }
 
         power = findViewById(R.id.power)
         state = findViewById(R.id.state)
@@ -142,7 +148,7 @@ class MainActivity : Activity(), SharedPreferences.OnSharedPreferenceChangeListe
     private fun onPowerClick() {
         when {
             // The accessibility service follows the stored state; no foreground service needed.
-            DarkerAccessibilityService.isActive -> Prefs.setEnabled(this, !Prefs.isEnabled(this))
+            DimmerAccessibilityService.isActive -> Prefs.setEnabled(this, !Prefs.isEnabled(this))
             Prefs.isEnabled(this) -> startService(
                 Intent(this, OverlayService::class.java).setAction(OverlayService.ACTION_STOP)
             )
@@ -176,7 +182,7 @@ class MainActivity : Activity(), SharedPreferences.OnSharedPreferenceChangeListe
     }
 
     private fun startOverlay() {
-        if (DarkerAccessibilityService.isActive) {
+        if (DimmerAccessibilityService.isActive) {
             Prefs.setEnabled(this, true)
             return
         }
@@ -215,7 +221,7 @@ class MainActivity : Activity(), SharedPreferences.OnSharedPreferenceChangeListe
 
     private fun render() {
         val on = Prefs.isEnabled(this)
-        val a11y = DarkerAccessibilityService.isActive
+        val a11y = DimmerAccessibilityService.isActive
         power.isActivated = on
         power.contentDescription = getString(if (on) R.string.turn_off else R.string.turn_on)
         state.setText(if (on) R.string.state_on else R.string.state_off)

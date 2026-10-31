@@ -12,17 +12,31 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-    <TextView
-            android:layout_width="wrap_content"
+    <FrameLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="32dp"
-            android:text="@string/app_name"
-            android:textAllCaps="true"
-            android:letterSpacing="0.45"
-            android:textSize="13sp"
-            android:textStyle="bold"
-            android:textColor="@color/text"/>
+            android:layout_marginTop="20dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/logo_title"
+                android:letterSpacing="0.45"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/text"/>
+
+        <ImageButton
+                android:id="@+id/btn_about"
+                style="@style/P.IconButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="@string/about"
+                android:src="@drawable/p_ic_info"/>
+    </FrameLayout>
 
     <!-- Controls: centered in whatever space the setup buttons leave -->
     <FrameLayout
@@ -96,7 +110,7 @@
 
             <SeekBar
                     android:id="@+id/dim_slider"
-                    style="@style/DarkerSlider"
+                    style="@style/DimmerSlider"
                     android:min="0"
                     android:max="80"/>
             <LinearLayout
@@ -133,7 +147,7 @@
 
             <SeekBar
                     android:id="@+id/bright_slider"
-                    style="@style/DarkerSlider"
+                    style="@style/DimmerSlider"
                     android:min="1"
                     android:max="100"/>
         </LinearLayout>
@@ -167,11 +181,11 @@
 
             <FrameLayout
                     android:id="@+id/btn_overlay"
-                    style="@style/DarkerButton"
+                    style="@style/DimmerButton"
                     android:background="@drawable/button_filled">
 
                 <TextView
-                        style="@style/DarkerButtonLabel"
+                        style="@style/DimmerButtonLabel"
                         android:text="@string/allow_overlay"
                         android:textColor="@color/on_accent"
                         android:drawableStart="@drawable/ic_layers"
@@ -197,11 +211,11 @@
 
             <FrameLayout
                     android:id="@+id/btn_settings"
-                    style="@style/DarkerButton"
+                    style="@style/DimmerButton"
                     android:background="@drawable/button_outlined">
 
                 <TextView
-                        style="@style/DarkerButtonLabel"
+                        style="@style/DimmerButtonLabel"
                         android:text="@string/allow_settings"
                         android:textColor="@color/text"
                         android:drawableStart="@drawable/ic_sun"
@@ -227,11 +241,11 @@
 
             <FrameLayout
                     android:id="@+id/btn_a11y"
-                    style="@style/DarkerButton"
+                    style="@style/DimmerButton"
                     android:background="@drawable/button_outlined">
 
                 <TextView
-                        style="@style/DarkerButtonLabel"
+                        style="@style/DimmerButtonLabel"
                         android:text="@string/enable_a11y"
                         android:textColor="@color/text"
                         android:drawableStart="@drawable/ic_accessibility"
