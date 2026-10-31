@@ -1,7 +1,7 @@
 # Darker Privacy Policy
 
 **Effective date:** 2026-10-10
-**App:** Darker (`x.vladgba.darker`), an open-source screen dimmer for Android
+**App:** Darker (`x.vladgba.dimmer`), an open-source screen dimmer for Android
 **Developer:** Vladyslav Tishyn (vladgba), vladgba@gmail.com
 
 ## Summary

@@ -1,4 +1,4 @@
-package x.vladgba.darker
+package x.vladgba.dimmer
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -47,11 +47,11 @@ class WidgetActionReceiver : BroadcastReceiver() {
 }
 
 object Widgets {
-    const val ACTION_POWER = "x.vladgba.darker.WIDGET_POWER"
-    const val ACTION_DIM_UP = "x.vladgba.darker.DIM_UP"
-    const val ACTION_DIM_DOWN = "x.vladgba.darker.DIM_DOWN"
-    const val ACTION_BRIGHT_UP = "x.vladgba.darker.BRIGHT_UP"
-    const val ACTION_BRIGHT_DOWN = "x.vladgba.darker.BRIGHT_DOWN"
+    const val ACTION_POWER = "x.vladgba.dimmer.WIDGET_POWER"
+    const val ACTION_DIM_UP = "x.vladgba.dimmer.DIM_UP"
+    const val ACTION_DIM_DOWN = "x.vladgba.dimmer.DIM_DOWN"
+    const val ACTION_BRIGHT_UP = "x.vladgba.dimmer.BRIGHT_UP"
+    const val ACTION_BRIGHT_DOWN = "x.vladgba.dimmer.BRIGHT_DOWN"
 
     private const val COLOR_ACCENT = 0xFFF2EDE4.toInt()
     private const val COLOR_INK = 0xFF0A0A0B.toInt()

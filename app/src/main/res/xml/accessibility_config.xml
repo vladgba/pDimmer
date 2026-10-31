@@ -3,7 +3,7 @@
 <accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
                        android:description="@string/a11y_description"
                        android:summary="@string/a11y_description"
-                       android:packageNames="x.vladgba.darker"
+                       android:packageNames="x.vladgba.dimmer"
                        android:accessibilityEventTypes="typeWindowStateChanged"
                        android:accessibilityFeedbackType="feedbackGeneric"
                        android:accessibilityFlags="flagDefault"

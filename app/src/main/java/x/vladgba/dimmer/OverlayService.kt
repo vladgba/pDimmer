@@ -1,4 +1,4 @@
-package x.vladgba.darker
+package x.vladgba.dimmer
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -25,9 +25,9 @@ import android.view.WindowManager
 class OverlayService : Service(), SharedPreferences.OnSharedPreferenceChangeListener {
 
     companion object {
-        const val ACTION_START = "x.vladgba.darker.START"
-        const val ACTION_STOP = "x.vladgba.darker.STOP"
-        const val ACTION_TOGGLE = "x.vladgba.darker.TOGGLE"
+        const val ACTION_START = "x.vladgba.dimmer.START"
+        const val ACTION_STOP = "x.vladgba.dimmer.STOP"
+        const val ACTION_TOGGLE = "x.vladgba.dimmer.TOGGLE"
         private const val CHANNEL_ID = "overlay"
         private const val NOTIFICATION_ID = 1
 

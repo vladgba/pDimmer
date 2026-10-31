@@ -6,13 +6,13 @@ plugins {
 apply(from = rootProject.file("gradle/android-common.gradle"))
 
 android {
-    namespace = "x.vladgba.darker"
+    namespace = "x.vladgba.dimmer"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "x.vladgba.darker"
+        applicationId = "x.vladgba.dimmer"
         minSdk = 26
         targetSdk = 36
     }

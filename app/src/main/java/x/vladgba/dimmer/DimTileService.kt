@@ -1,4 +1,4 @@
-package x.vladgba.darker
+package x.vladgba.dimmer
 
 import android.app.PendingIntent
 import android.content.ComponentName
