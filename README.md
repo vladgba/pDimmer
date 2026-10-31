@@ -1,6 +1,6 @@
-# Darker
+# pDimmer
 
-A minimalist Android screen dimmer. Darker draws a black, semi-transparent layer over the screen so you can go below the minimum system brightness. Touches pass straight through the layer, so you keep using your phone normally.
+A minimalist Android screen dimmer. pDimmer draws a black, semi-transparent layer over the screen so you can go below the minimum system brightness. Touches pass straight through the layer, so you keep using your phone normally.
 
 <p align="center">
   <img src="docs/feature-graphic.png">
@@ -13,8 +13,8 @@ A minimalist Android screen dimmer. Darker draws a black, semi-transparent layer
 </p>
 
 <p align="center">
-  Darker is in internal testing. The link works only for Google accounts on the tester list.
-  To join, email <a href="mailto:vladgba@gmail.com?subject=Darker%20tester">vladgba@gmail.com</a> with the address you use on Google Play.
+  pDimmer is in internal testing. The link works only for Google accounts on the tester list.
+  To join, email <a href="mailto:vladgba@gmail.com?subject=pDimmer%20tester">vladgba@gmail.com</a> with the address you use on Google Play.
 </p>
 
 ## Features
@@ -24,7 +24,7 @@ A minimalist Android screen dimmer. Darker draws a black, semi-transparent layer
   - **Dim level** (4×1): − / bar / +
   - **Brightness** (4×1): − / bar / + for the system screen brightness
   - **Dim button** (1×1): on/off toggle
-  - **Darker (all)** (4×2): all of the above in one widget
+  - **pDimmer (all)** (4×2): all of the above in one widget
 - **Quick Settings tile.** Toggle dimming from the notification shade.
 - **Optional accessibility mode.** It also dims the status bar and notification shade, and allows dimming up to 95%.
 - **No ads, no network, no data collection.**
@@ -35,8 +35,8 @@ A minimalist Android screen dimmer. Darker draws a black, semi-transparent layer
 |---|---|---|
 | Display over other apps | Draws the dimming layer | Yes, unless accessibility mode is on |
 | Modify system settings | Brightness slider and Brightness widget | Optional |
-| Accessibility service | Dims the system bars too and allows up to 95% dimming. It receives events only from Darker itself and never reads screen content | Optional |
-| Notifications | Shows the ongoing "Darker is on" notification with a Turn off button | Optional |
+| Accessibility service | Dims the system bars too and allows up to 95% dimming. It receives events only from pDimmer itself and never reads screen content | Optional |
+| Notifications | Shows the ongoing "pDimmer is on" notification with a Turn off button | Optional |
 
 The app shows a setup button for each permission that is missing. Each button disappears once its permission is granted.
 

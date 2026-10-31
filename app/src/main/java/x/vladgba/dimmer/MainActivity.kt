@@ -219,7 +219,7 @@ class MainActivity : Activity(), SharedPreferences.OnSharedPreferenceChangeListe
         power.isActivated = on
         power.contentDescription = getString(if (on) R.string.turn_off else R.string.turn_on)
         state.setText(if (on) R.string.state_on else R.string.state_off)
-        state.setTextColor(getColor(if (on) R.color.accent else R.color.muted))
+        state.setTextColor(getColor(if (on) R.color.accent_text else R.color.muted))
         dimValue.animate().alpha(if (on) 1f else 0.7f).setDuration(200).start()
 
         // Setup: one button per missing permission; each disappears once granted.

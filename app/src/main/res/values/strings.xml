@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Darker</string>
     <string name="dim">Dim</string>
     <string name="brightness">Brightness</string>
     <string name="toggle_dim">Toggle dim</string>
@@ -13,15 +12,15 @@
     <string name="enable_a11y_hint">Optional · also dims status bar and notifications, up to 95%</string>
     <string name="allow_settings">Allow modify system settings</string>
     <string name="allow_settings_hint">Needed for the brightness slider and widget</string>
-    <string name="a11y_description">Draws the dimming layer above the status bar and notification shade. Darker does not read or collect any screen content.</string>
+    <string name="a11y_description">Draws the dimming layer above the status bar and notification shade. pDimmer does not read or collect any screen content.</string>
     <string name="a11y_disclosure_title">Use the accessibility service?</string>
-    <string name="a11y_disclosure_text">Darker can use Android\'s Accessibility Service API to draw its dimming layer as an accessibility overlay. This lets it also dim the status bar and notification shade and go darker, up to 95%.\n\nThe service is used only to show that dark layer. It does not read, collect, store or share any screen content, text you type or other data, and it does not perform actions for you. Darker has no internet access.\n\nOn the next screen, find Darker and turn it on. You can turn it off at any time in Accessibility settings.</string>
+    <string name="a11y_disclosure_text">pDimmer can use Android\'s Accessibility Service API to draw its dimming layer as an accessibility overlay. This lets it also dim the status bar and notification shade and go darker, up to 95%.\n\nThe service is used only to show that dark layer. It does not read, collect, store or share any screen content, text you type or other data, and it does not perform actions for you. pDimmer has no internet access.\n\nOn the next screen, find pDimmer and turn it on. You can turn it off at any time in Accessibility settings.</string>
     <string name="a11y_disclosure_agree">Agree</string>
     <string name="a11y_disclosure_decline">No thanks</string>
     <string name="state_on">On</string>
     <string name="state_off">Off</string>
     <string name="notif_channel">Dimmer</string>
-    <string name="notif_title">Darker is on</string>
+    <string name="notif_title">pDimmer is on</string>
     <string name="notif_text">Tap to adjust</string>
     <string name="widget_description">Dim button, dim level and brightness</string>
     <string name="widget_dim_desc">Dim level, − and +</string>
@@ -30,7 +29,7 @@
     <string name="widget_dim_label">Dim level</string>
     <string name="widget_bright_label">Brightness</string>
     <string name="widget_toggle_label">Dim button</string>
-    <string name="widget_combined_label">Darker (all)</string>
+    <string name="widget_combined_label">pDimmer (all)</string>
     <string name="dim_less">Less dim</string>
     <string name="dim_more">More dim</string>
     <string name="bright_less">Lower brightness</string>
