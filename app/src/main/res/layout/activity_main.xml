@@ -173,9 +173,9 @@
                 <TextView
                         style="@style/DarkerButtonLabel"
                         android:text="@string/allow_overlay"
-                        android:textColor="@color/ink"
+                        android:textColor="@color/on_accent"
                         android:drawableStart="@drawable/ic_layers"
-                        android:drawableTint="@color/ink"/>
+                        android:drawableTint="@color/on_accent"/>
             </FrameLayout>
 
             <TextView
