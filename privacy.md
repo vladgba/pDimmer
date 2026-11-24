@@ -6,7 +6,7 @@
 
 ## Summary
 
-- pDimmer has **no internet permission**, so the app itself cannot send anything off your phone.
+- pDimmer has **no internet permission**, so the app itself cannot make direct Internet connections. Android backup and actions delegated to other apps are described below.
 - The developer **receives no data** from the app: no analytics, no crash reports, no ads, no accounts, no third-party libraries.
 - pDimmer **does not read your screen**. It only draws a dark layer over it.
 - Everything pDimmer stores stays **on your phone**, inside the app's private storage.
