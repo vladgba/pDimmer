@@ -1,0 +1,5 @@
+Toggle a dimming overlay, adjust its intensity and use home-screen brightness controls.
+
+Dim the screen with an overlay and adjust brightness from widgets.
+
+Requires Android API 26 or later.
